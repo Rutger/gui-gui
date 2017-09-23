@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import String from '../component/String';
 import { String as StringModel, StringStore } from '../store/String';
+import tonal from 'tonal';
+import teoria from 'teoria';
 
 export default class Fretboard extends Component {
     componentWillMount() {
@@ -9,7 +11,7 @@ export default class Fretboard extends Component {
 
     addString = () => {
         const string = new StringModel({
-            tuning: 'A#',
+            tuning: teoria.note.fromKey(1),
         });
         this.stringStore.add(string.toJS());
 
