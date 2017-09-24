@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 import String from '../component/String';
 import { String as StringModel, StringStore } from '../store/String';
-import tonal from 'tonal';
-import teoria from 'teoria';
 
+@observer
 export default class Fretboard extends Component {
     componentWillMount() {
         this.stringStore = new StringStore();
     }
 
     addString = () => {
-        const string = new StringModel({
-            tuning: teoria.note.fromKey(1),
-        });
+        const string = new StringModel();
         this.stringStore.add(string.toJS());
-
-        // TODO: Find out why this doesn't work otherwise.
-        this.forceUpdate();
     }
 
     render() {

@@ -4,12 +4,13 @@
   "dependencies": {
     "axios": "^0.16.2",
     "mobx": "^3.3.0",
+    "mobx-react": "^4.3.2",
     "mobx-spine": "^0.16.6",
     "moment": "^2.18.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "teoria": "^2.5.0",
-    "tonal": "^0.69.9"
+    "styled-components": "^2.1.2",
+    "teoria": "^2.5.0"
   },
   "devDependencies": {
     "react-cy-scripts": "0.12.4"

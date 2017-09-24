@@ -1,3 +1,5 @@
+import teoria from 'teoria';
+
 const intervalNames = [
     'P1',
     'm2',
@@ -14,5 +16,11 @@ const intervalNames = [
 ];
 
 export function intervalFromSemitones(semitones) {
-    return intervalNames[semitones % 12];
+    const interval = teoria.interval(intervalNames[Math.abs(semitones % 12)]);
+
+    if (semitones < 0) {
+        interval.direction('down');
+    }
+
+    return interval;
 }
