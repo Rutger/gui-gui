@@ -3,7 +3,7 @@ import { Model, Store } from 'mobx-spine';
 import { intervalFromSemitones } from '../helpers';
 
 export class String extends Model {
-    @observable tuningKey = 1;
+    @observable tuningKey = null;
 
     @action
     transpose = semitones => {

@@ -19,6 +19,7 @@ const Note = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    border-right: 1px solid black;
 `;
 
 @observer
@@ -44,10 +45,14 @@ export default class String extends Component {
         return notes.map((semitones) => this.renderNote(semitones));
     }
 
+    handleDelete = () => {
+        this.props.stringStore.remove(this.props.string);
+    }
+
     render() {
         return (
             <Container>
-                <Tuner string={this.props.string} />
+                <Tuner string={this.props.string} onDelete={this.handleDelete} />
                 {this.renderNotes()}
             </Container>
         );

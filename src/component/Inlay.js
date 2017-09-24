@@ -31,7 +31,7 @@ const Indicator = styled.div`
 `;
 
 const TunerSpacer = styled.div`
-    width: 60px;
+    width: 80px;
 `;
 
 const indicatorFormat = [

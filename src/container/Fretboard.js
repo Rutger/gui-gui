@@ -15,7 +15,7 @@ export default class Fretboard extends Component {
 
     addString = (tuningKey) => {
         const string = new StringModel({
-            tuningKey: tuningKey || null,
+            tuningKey: tuningKey || 1,
         });
 
         this.stringStore.add(string.toJS());
@@ -27,8 +27,9 @@ export default class Fretboard extends Component {
                 <div>
                     <Inlay />
                     {this.stringStore.map(string =>
-                        <String key={string.cid} string={string} />
+                        <String key={string.cid} string={string} stringStore={this.stringStore} />
                     )}
+                    <Inlay />
                 </div>
                 <button onClick={() => this.addString()} type="button">+</button>
             </div>
