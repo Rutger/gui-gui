@@ -4,11 +4,11 @@ import Fretboard from './Fretboard';
 
 @observer
 export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Fretboard />
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Fretboard />
+            </div>
+        );
+    }
 }
