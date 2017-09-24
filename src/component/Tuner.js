@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     background: #eee;
-    width: 50px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ export default class Tuner extends Component {
         return (
             <Container>
                 <button type="button" onClick={() => this.props.string.transpose(1)}>▲</button>
-                {note.toString(true)}
+                <div>{note.toString(true)}</div>
                 <button type="button" onClick={() => this.props.string.transpose(-1)}>▼</button>
             </Container>
         );

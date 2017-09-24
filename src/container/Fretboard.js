@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import String from '../component/String';
+import Inlay from '../component/Inlay';
 import { String as StringModel, StringStore } from '../store/String';
 
 @observer
@@ -23,12 +24,13 @@ export default class Fretboard extends Component {
     render() {
         return (
             <div>
-                <button onClick={() => this.addString()} type="button">+</button>
                 <div>
+                    <Inlay />
                     {this.stringStore.map(string =>
                         <String key={string.cid} string={string} />
                     )}
                 </div>
+                <button onClick={() => this.addString()} type="button">+</button>
             </div>
         );
     }

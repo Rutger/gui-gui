@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 
 const Note = styled.div`
-    width: 30px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
