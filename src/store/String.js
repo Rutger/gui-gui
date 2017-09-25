@@ -6,7 +6,8 @@ export class String extends Model {
 
     @action
     transpose = semitones => {
-        this.tuningKey += semitones;
+        this.tuningKey = (((this.tuningKey + semitones) % 12) + 12) % 12;
+        console.log(this.tuningKey);
     };
 }
 

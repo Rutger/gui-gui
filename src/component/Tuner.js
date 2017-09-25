@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { String as StringModel } from 'store/String';
 import tonal from 'tonal';
 import styled from 'styled-components';
+import Note from './Note';
 
 const Container = styled.div`
     background: #eee;
@@ -26,12 +27,13 @@ export default class Tuner extends Component {
     static propTypes = {
         string: PropTypes.instanceOf(StringModel).isRequired,
         onDelete: PropTypes.func.isRequired,
+        scale: PropTypes.instanceOf(tonal.Scale).isRequired,
     };
 
     render() {
         const note = tonal.note.pc(
             tonal.note.simplify(
-                tonal.note.fromMidi(this.props.string.tuningKey + 20)
+                tonal.note.fromMidi(this.props.string.tuningKey + 8)
             )
         );;
 
@@ -40,7 +42,10 @@ export default class Tuner extends Component {
                 <button type="button" onClick={this.props.onDelete}>×</button>
                 <Tuning>
                     <button type="button" onClick={() => this.props.string.transpose(1)}>▲</button>
-                    <div>{note.toString(true)}</div>
+                    <Note
+                        note={note}
+                        scale={this.props.scale}
+                    />
                     <button type="button" onClick={() => this.props.string.transpose(-1)}>▼</button>
                 </Tuning>
             </Container>
