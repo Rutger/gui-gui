@@ -65,13 +65,13 @@ export default class Inlay extends Component {
         return (
             <Container>
                 <TunerSpacer />
-                {indicatorFormat.map(amount => {
+                {indicatorFormat.map((amount, indicatorIndex) => {
                     const indicators = [];
                     for (let index = 0; index < amount; index++) {
-                        indicators.push(<Indicator />);
+                        indicators.push(<Indicator key={index} />);
                     }
 
-                    return <Fret>{indicators}</Fret>;
+                    return <Fret key={indicatorIndex}>{indicators}</Fret>;
                 })}
             </Container>
         );

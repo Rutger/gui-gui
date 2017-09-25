@@ -14,7 +14,7 @@ const Container = styled.div`
     height: 60px;
 `;
 
-const Note = styled.div`
+const Fret = styled.div`
     width: 40px;
     display: flex;
     align-items: center;
@@ -22,20 +22,49 @@ const Note = styled.div`
     border-right: 1px solid black;
 `;
 
+const Note = styled.div`
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+    ${props => {
+        if (!props.scaleDegree) return `
+            opacity: 0.3;
+        `;
+        if (props.scaleDegree === 1) return `
+            background: red;
+            color: white;
+        `;
+        return `
+            background: black;
+            color: white;
+        `;
+    }}
+`;
+
 @observer
 export default class String extends Component {
     static propTypes = {
         string: PropTypes.instanceOf(StringModel).isRequired,
+        scale: PropTypes.instanceOf(teoria.Scale).isRequired,
     };
 
     renderNote = (semitones) => {
         const key = this.props.string.tuningKey + semitones;
         const note = teoria.note.fromKey(key);
+        const scaleDegree = note.scaleDegree(this.props.scale)
+        console.log(scaleDegree);
 
         return (
-            <Note key={semitones}>
-                {note.toString(true)}
-            </Note>
+            <Fret key={semitones}>
+                <Note scaleDegree={scaleDegree}>
+                    {note.toString(true)}
+                </Note>
+            </Fret>
         );
     }
 
