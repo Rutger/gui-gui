@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
 import { String as StringModel } from 'store/String';
-import teoria from 'teoria';
-import { intervalFromSemitones } from '../helpers';
+import tonal from 'tonal';
 import styled from 'styled-components';
 import Tuner from './Tuner';
 

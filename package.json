@@ -10,7 +10,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^2.1.2",
-    "teoria": "^2.5.0"
+    "tonal": "^0.69.9"
   },
   "devDependencies": {
     "react-cy-scripts": "0.12.4"

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import String from '../component/String';
 import Inlay from '../component/Inlay';
-import teoria from 'teoria';
+import tonal from 'tonal';
 import { String as StringModel, StringStore } from '../store/String';
 
 @observer
 export default class Fretboard extends Component {
     static propTypes = {
-        scale: PropTypes.instanceOf(teoria.Scale).isRequired,
+        scale: PropTypes.instanceOf(tonal.Scale).isRequired,
     };
 
     componentWillMount() {
@@ -28,7 +28,6 @@ export default class Fretboard extends Component {
     }
 
     render() {
-        console.log(this.props.scale.simple());
         return (
             <div>
                 <div>

@@ -1,6 +1,5 @@
 import { observable, action } from 'mobx';
 import { Model, Store } from 'mobx-spine';
-import { intervalFromSemitones } from '../helpers';
 
 export class String extends Model {
     @observable tuningKey = null;

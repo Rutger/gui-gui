@@ -2,21 +2,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
-import teoria from 'teoria';
+import tonal from 'tonal';
 import { String as StringModel, StringStore } from '../store/String';
 
 const tonics = [
     'A',
-    'Bb',
+    'A#',
     'B',
     'C',
-    'Db',
+    'C#',
     'D',
-    'Eb',
+    'D#',
     'E',
     'F',
-    'Gb',
+    'F#',
     'G',
+    'G#',
 ];
 
 const scales = [
@@ -48,7 +49,7 @@ export default class Fretboard extends Component {
 
     static propTypes = {
         setScale: PropTypes.func.isRequired,
-        scale: PropTypes.instanceOf(teoria.Scale).isRequired,
+        scale: PropTypes.instanceOf(tonal.Scale).isRequired,
     };
 
     setTonic = event => {
@@ -62,7 +63,7 @@ export default class Fretboard extends Component {
     }
 
     updateScale = () => {
-        this.props.setScale(this.tonic, this.scale)
+        this.props.setScale(this.scale, this.tonic);
     }
 
     render() {
@@ -74,7 +75,7 @@ export default class Fretboard extends Component {
                     ))}
                 </select>
                 <select onChange={this.setScale} value={this.scale}>
-                    {scales.map(scale => (
+                    {tonal.scale.names().map(scale => (
                         <option key={scale} value={scale}>{scale}</option>
                     ))}
                 </select>

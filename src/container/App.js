@@ -3,17 +3,14 @@ import { observer } from 'mobx-react';
 import { observable } from 'mobx';
 import Fretboard from './Fretboard';
 import ScaleSelector from './ScaleSelector';
-import teoria from 'teoria';
+import tonal from 'tonal';
 
 @observer
 export default class App extends Component {
-    @observable scale = teoria.scale(
-        teoria.note('a'),
-        'major',
-    );
+    @observable scale = tonal.scale.get('major', 'a');
 
-    setScale = (tonic, scale) => {
-        this.scale = teoria.scale(tonic, scale);
+    setScale = (scale, tonic) => {
+        this.scale = tonal.scale.get(scale, tonic);
     }
 
     render() {

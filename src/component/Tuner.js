@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
 import { String as StringModel } from 'store/String';
-import teoria from 'teoria';
+import tonal from 'tonal';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -29,7 +29,11 @@ export default class Tuner extends Component {
     };
 
     render() {
-        const note = teoria.note.fromKey(this.props.string.tuningKey);
+        const note = tonal.note.pc(
+            tonal.note.simplify(
+                tonal.note.fromMidi(this.props.string.tuningKey + 20)
+            )
+        );;
 
         return (
             <Container>
