@@ -12,6 +12,10 @@ const Container = styled.div`
     padding: 20px 0;
 `;
 
+const Board = styled.div`
+    display: inline-block;
+`;
+
 @observer
 export default class Fretboard extends Component {
     static propTypes = {
@@ -36,7 +40,7 @@ export default class Fretboard extends Component {
     render() {
         return (
             <Container>
-                <div>
+                <Board>
                     <Inlay position="top" />
                     {this.stringStore.map(string =>
                         <String key={string.cid} string={string} stringStore={this.stringStore} scale={this.props.scale} />
@@ -44,7 +48,7 @@ export default class Fretboard extends Component {
                     <Inlay position="bottom">
                         <Button onClick={() => this.addString()} type="button">+</Button>
                     </Inlay>
-                </div>
+                </Board>
             </Container>
         );
     }
