@@ -60,10 +60,16 @@ const indicatorFormat = [
 
 @observer
 export default class Inlay extends Component {
+    static propTypes = {
+        children: PropTypes.node,
+    };
+
     render() {
         return (
             <Container>
-                <TunerSpacer />
+                <TunerSpacer>
+                    {this.props.children}
+                </TunerSpacer>
                 {indicatorFormat.map((amount, indicatorIndex) => {
                     const indicators = [];
                     for (let index = 0; index < amount; index++) {

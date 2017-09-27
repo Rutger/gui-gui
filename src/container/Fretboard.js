@@ -35,9 +35,10 @@ export default class Fretboard extends Component {
                     {this.stringStore.map(string =>
                         <String key={string.cid} string={string} stringStore={this.stringStore} scale={this.props.scale} />
                     )}
-                    <Inlay />
+                    <Inlay>
+                        <button onClick={() => this.addString()} type="button">+</button>
+                    </Inlay>
                 </div>
-                <button onClick={() => this.addString()} type="button">+</button>
             </div>
         );
     }
