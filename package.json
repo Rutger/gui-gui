@@ -14,6 +14,8 @@
     "tonal": "^1.0.0-0"
   },
   "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-codeyellow": "^4.1.2",
     "react-cy-scripts": "0.12.4"
   },
   "scripts": {

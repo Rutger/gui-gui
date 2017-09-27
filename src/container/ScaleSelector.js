@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { PropTypes as MobXTypes } from "mobx-react"
+import { PropTypes as MobXTypes } from 'mobx-react';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { scale } from 'tonal';
-import { String as StringModel, StringStore } from '../store/String';
 import styled from 'styled-components';
 import Select from 'react-select';
 

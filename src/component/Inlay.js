@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import { String as StringModel } from 'store/String';
-import tonal from 'tonal';
 import styled from 'styled-components';
-import Tuner from './Tuner';
 
 const Container = styled.div`
     display: flex;

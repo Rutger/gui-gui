@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes as MobXTypes } from "mobx-react"
-import PropTypes from 'prop-types';
+import { PropTypes as MobXTypes } from 'mobx-react';
 import { observer } from 'mobx-react';
 import String from '../component/String';
 import Inlay from '../component/Inlay';

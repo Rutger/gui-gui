@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
 import { PropTypes as MobXTypes } from 'mobx-react';
-import { String as StringModel } from 'store/String';
+import { String as StringModel, StringStore } from 'store/String';
 import { note } from 'tonal';
 import styled from 'styled-components';
 import Tuner from './Tuner';
@@ -27,6 +27,7 @@ const Fret = styled.div`
 export default class String extends Component {
     static propTypes = {
         string: PropTypes.instanceOf(StringModel).isRequired,
+        stringStore: PropTypes.instanceOf(StringStore).isRequired,
         scale: MobXTypes.arrayOrObservableArray.isRequired,
     };
 
