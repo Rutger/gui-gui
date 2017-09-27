@@ -10,7 +10,9 @@ export default class App extends Component {
     @observable scale = tonal.scale.get('major', 'a');
 
     setScale = (scale, tonic) => {
-        this.scale = tonal.scale.get(scale, tonic);
+        this.scale = tonal.scale.get(scale, tonic)
+            // Simplify scale.
+            .map(note => tonal.note.pc(tonal.note.simplify(note)));
     }
 
     render() {

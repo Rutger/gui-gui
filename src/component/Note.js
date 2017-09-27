@@ -40,7 +40,6 @@ export default class String extends Component {
     render() {
         let scaleDegree = -1;
         this.props.scale.forEach((scaleNote, index) => {
-            scaleNote = tonal.note.pc(tonal.note.simplify(scaleNote));
             if (scaleNote === this.props.note) {
                 scaleDegree = index;
             }
