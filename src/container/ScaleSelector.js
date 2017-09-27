@@ -9,11 +9,22 @@ import Select from 'react-select';
 
 const TonicSelect = styled(Select)`
     width: 110px;
+    margin: 5px;
 
     & .Select-value,
     & .Select-option {
         text-align: center;
     }
+`;
+
+const ScaleSelect = styled(Select)`
+    width: 300px;
+    margin: 5px;
+`;
+
+const Description = styled.div`
+    color: white;
+    margin: 5px;
 `;
 
 const tonics = [
@@ -30,6 +41,11 @@ const tonics = [
     { value: 'G', label: 'G' },
     { value: 'G#', label: 'G# / Ab' },
 ];
+
+const scales = scale.names(true).map(scaleName => ({
+    value: scaleName,
+    label: scaleName,
+}));
 
 
 const Container = styled.div`
@@ -55,8 +71,8 @@ export default class Fretboard extends Component {
         this.updateScale();
     }
 
-    setScale = event => {
-        this.scale = event.target.value;
+    setScale = option => {
+        this.scale = option.value;
         this.updateScale();
     }
 
@@ -67,6 +83,9 @@ export default class Fretboard extends Component {
     render() {
         return (
             <Container>
+                <Description>
+                    Display scale
+                </Description>
                 <TonicSelect
                     options={tonics}
                     value={this.tonic}
@@ -77,11 +96,16 @@ export default class Fretboard extends Component {
                     autosize={false}
                     closeOnSelect={false}
                 />
-                <select onChange={this.setScale} value={this.scale}>
-                    {scale.names().map(scale => (
-                        <option key={scale} value={scale}>{scale}</option>
-                    ))}
-                </select>
+                <ScaleSelect
+                    options={scales}
+                    value={this.scale}
+                    onChange={this.setScale}
+                    clearable={false}
+                    backspaceRemoves={false}
+                    autosize={false}
+                    closeOnSelect={false}
+                    noResultsText="No scales found"
+                />
             </Container>
         );
     }
