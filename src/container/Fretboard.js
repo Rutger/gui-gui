@@ -4,6 +4,11 @@ import { observer } from 'mobx-react';
 import String from '../component/String';
 import Inlay from '../component/Inlay';
 import { String as StringModel, StringStore } from '../store/String';
+import styled from 'styled-components';
+
+const Container = styled.div`
+    overflow-x: auto;
+`;
 
 @observer
 export default class Fretboard extends Component {
@@ -28,7 +33,7 @@ export default class Fretboard extends Component {
 
     render() {
         return (
-            <div>
+            <Container>
                 <div>
                     <Inlay />
                     {this.stringStore.map(string =>
@@ -38,7 +43,7 @@ export default class Fretboard extends Component {
                         <button onClick={() => this.addString()} type="button">+</button>
                     </Inlay>
                 </div>
-            </div>
+            </Container>
         );
     }
 }

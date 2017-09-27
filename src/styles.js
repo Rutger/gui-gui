@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
 injectGlobal`
-    html, body {
+    html, body, #root {
         height: 100%;
         width: 100%;
     }
@@ -21,11 +21,5 @@ injectGlobal`
 
     input, button {
         font-family: inherit;
-    }
-
-    #root {
-        height: 100%;
-        width: 100%;
-        display: flex;
     }
 `;

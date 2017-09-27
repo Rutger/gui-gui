@@ -8,14 +8,18 @@ import styled from 'styled-components';
 import 'react-select/dist/react-select.css';
 
 const Container = styled.div`
-    flex: 1;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 `;
 
 const Content = styled.div`
     flex: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 `;
 
 @observer
