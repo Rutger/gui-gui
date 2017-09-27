@@ -6,6 +6,7 @@ import { String as StringModel } from 'store/String';
 import { note } from 'tonal';
 import styled from 'styled-components';
 import Note from './Note';
+import Button from './Button';
 
 const Container = styled.div`
     background: #eee;
@@ -16,11 +17,12 @@ const Container = styled.div`
     flex-direction: row;
 `;
 
-const Tuning = styled.div`
+const Actions = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-right: 5px;
 `;
 
 @observer
@@ -37,15 +39,21 @@ export default class Tuner extends Component {
 
         return (
             <Container>
-                <button type="button" onClick={this.props.onDelete}>×</button>
-                <Tuning>
-                    <button type="button" onClick={() => this.props.string.transpose(1)}>▲</button>
-                    <Note
-                        note={scaleNote}
-                        scale={this.props.scale}
-                    />
-                    <button type="button" onClick={() => this.props.string.transpose(-1)}>▼</button>
-                </Tuning>
+                <Actions>
+                    <Button type="button" onClick={() => this.props.string.transpose(1)}>
+                        ▲
+                    </Button>
+                    <Button type="button" onClick={this.props.onDelete}>
+                        ×
+                    </Button>
+                    <Button type="button" onClick={() => this.props.string.transpose(-1)}>
+                        ▼
+                    </Button>
+                </Actions>
+                <Note
+                    note={scaleNote}
+                    scale={this.props.scale}
+                />
             </Container>
         );
     }

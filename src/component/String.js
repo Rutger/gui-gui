@@ -12,7 +12,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    height: 80px;
 `;
 
 const Fret = styled.div`
@@ -20,7 +19,7 @@ const Fret = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid black;
+    border-right: 2px solid #eee;
 `;
 
 @observer

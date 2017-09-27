@@ -15,15 +15,15 @@ const Note = styled.div`
 
     ${props => {
         if (props.scaleDegree === -1) return `
-            opacity: 0.3;
+            color: #bbb;
         `;
         if (props.scaleDegree === 0) return `
-            background: red;
-            color: white;
+            background: #f12424;
+            color: #fff;
         `;
         return `
-            background: black;
-            color: white;
+            background: #333;
+            color: #fff;
         `;
     }}
 `;

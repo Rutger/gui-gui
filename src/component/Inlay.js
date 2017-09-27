@@ -16,6 +16,8 @@ const Fret = styled.div`
     justify-content: center;
     align-items: center;
     width: 40px;
+    border-right: 2px solid;
+    border-image: linear-gradient(to ${props => props.position}, #eee, rgba(0, 0, 0, 0)) 1 100%;
 `;
 
 const Indicator = styled.div`
@@ -28,6 +30,10 @@ const Indicator = styled.div`
 
 const TunerSpacer = styled.div`
     width: 80px;
+    background: linear-gradient(to ${props => props.position}, #eee, rgba(0, 0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 const indicatorFormat = [
@@ -59,12 +65,13 @@ const indicatorFormat = [
 export default class Inlay extends Component {
     static propTypes = {
         children: PropTypes.node,
+        position: PropTypes.string,
     };
 
     render() {
         return (
             <Container>
-                <TunerSpacer>
+                <TunerSpacer position={this.props.position}>
                     {this.props.children}
                 </TunerSpacer>
                 {indicatorFormat.map((amount, indicatorIndex) => {
@@ -73,7 +80,7 @@ export default class Inlay extends Component {
                         indicators.push(<Indicator key={index} />);
                     }
 
-                    return <Fret key={indicatorIndex}>{indicators}</Fret>;
+                    return <Fret position={this.props.position} key={indicatorIndex}>{indicators}</Fret>;
                 })}
             </Container>
         );
