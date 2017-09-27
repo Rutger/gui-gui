@@ -3,7 +3,7 @@ import { observer } from 'mobx-react';
 import { observable } from 'mobx';
 import Fretboard from './Fretboard';
 import ScaleSelector from './ScaleSelector';
-import tonal from 'tonal';
+import { note, scale } from 'tonal';
 import styled from 'styled-components';
 import 'react-select/dist/react-select.css';
 
@@ -20,12 +20,18 @@ const Content = styled.div`
 
 @observer
 export default class App extends Component {
-    @observable scale = tonal.scale.get('major', 'a');
+    @observable scale = [];
 
-    setScale = (scale, tonic) => {
-        this.scale = tonal.scale.get(scale, tonic)
+    setScale = (tonic, name) => {
+        this.scale = scale.notes(tonic, name)
             // Simplify scale.
-            .map(note => tonal.note.pc(tonal.note.simplify(note)));
+            .map(scaleNote => note.pc(
+                note.fromMidi(note.midi(`${scaleNote}4`), true)
+            ));
+    }
+
+    componentWillMount() {
+        this.setScale('A', 'major');
     }
 
     render() {

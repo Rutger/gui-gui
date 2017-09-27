@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
+import { PropTypes as MobXTypes } from 'mobx-react';
 import { String as StringModel } from 'store/String';
 import tonal from 'tonal';
 import styled from 'styled-components';
@@ -34,7 +35,7 @@ const Note = styled.div`
 export default class String extends Component {
     static propTypes = {
         note: PropTypes.string.isRequired,
-        scale: PropTypes.instanceOf(tonal.Scale).isRequired,
+        scale: MobXTypes.arrayOrObservableArray.isRequired,
     };
 
     render() {
@@ -47,7 +48,7 @@ export default class String extends Component {
 
         return (
             <Note scaleDegree={scaleDegree}>
-                {this.props.note.toString(true)}
+                {this.props.note}
             </Note>
         );
     }

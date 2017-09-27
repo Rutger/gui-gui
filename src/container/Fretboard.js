@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import { PropTypes as MobXTypes } from "mobx-react"
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import String from '../component/String';
 import Inlay from '../component/Inlay';
-import tonal from 'tonal';
 import { String as StringModel, StringStore } from '../store/String';
 
 @observer
 export default class Fretboard extends Component {
     static propTypes = {
-        scale: PropTypes.instanceOf(tonal.Scale).isRequired,
+        scale: MobXTypes.arrayOrObservableArray.isRequired,
     };
 
     componentWillMount() {
