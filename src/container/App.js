@@ -5,6 +5,7 @@ import Fretboard from './Fretboard';
 import ScaleSelector from './ScaleSelector';
 import tonal from 'tonal';
 import styled from 'styled-components';
+import 'react-select/dist/react-select.css';
 
 const Container = styled.div`
     flex: 1;
