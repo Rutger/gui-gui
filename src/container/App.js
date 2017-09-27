@@ -4,6 +4,18 @@ import { observable } from 'mobx';
 import Fretboard from './Fretboard';
 import ScaleSelector from './ScaleSelector';
 import tonal from 'tonal';
+import styled from 'styled-components';
+
+const Container = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+`;
+
+const Content = styled.div`
+    flex: 1;
+    overflow-y: scroll;
+`;
 
 @observer
 export default class App extends Component {
@@ -17,10 +29,12 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <Container>
                 <ScaleSelector scale={this.scale} setScale={this.setScale} />
-                <Fretboard scale={this.scale} />
-            </div>
+                <Content>
+                    <Fretboard scale={this.scale} />
+                </Content>
+            </Container>
         );
     }
 }

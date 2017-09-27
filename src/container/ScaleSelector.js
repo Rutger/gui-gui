@@ -4,6 +4,7 @@ import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import tonal from 'tonal';
 import { String as StringModel, StringStore } from '../store/String';
+import styled from 'styled-components';
 
 const tonics = [
     'A',
@@ -42,6 +43,13 @@ const scales = [
     'wholetone',
 ];
 
+const Container = styled.div`
+    height: 60px;
+    background: #333;
+    display: flex;
+    align-items: center;
+`;
+
 @observer
 export default class Fretboard extends Component {
     @observable tonic = 'A';
@@ -68,7 +76,7 @@ export default class Fretboard extends Component {
 
     render() {
         return (
-            <div>
+            <Container>
                 <select onChange={this.setTonic} value={this.tonic}>
                     {tonics.map(tonic => (
                         <option key={tonic} value={tonic}>{tonic}</option>
@@ -79,7 +87,7 @@ export default class Fretboard extends Component {
                         <option key={scale} value={scale}>{scale}</option>
                     ))}
                 </select>
-            </div>
+            </Container>
         );
     }
 }
