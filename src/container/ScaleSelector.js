@@ -49,8 +49,7 @@ const scales = scale.names(true).map(scaleName => ({
 
 
 const Container = styled.div`
-    height: 60px;
-    background: #333;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;

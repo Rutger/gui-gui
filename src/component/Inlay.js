@@ -23,7 +23,7 @@ const Fret = styled.div`
 const Indicator = styled.div`
     width: 10px;
     height: 10px;
-    background: #000;
+    background: #333;
     border-radius: 50%;
     margin: 5px;
 `;

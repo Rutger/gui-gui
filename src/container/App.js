@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import { observable } from 'mobx';
 import Fretboard from './Fretboard';
 import ScaleSelector from './ScaleSelector';
+import GitHub from 'component/GitHub';
 import { note, scale } from 'tonal';
 import styled from 'styled-components';
 import 'react-select/dist/react-select.css';
@@ -12,6 +13,13 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+`;
+
+const Header = styled.div`
+    height: 60px;
+    background: #333;
+    display: flex;
+    align-items: center;
 `;
 
 const Content = styled.div`
@@ -42,7 +50,10 @@ export default class App extends Component {
     render() {
         return (
             <Container>
-                <ScaleSelector scale={this.scale} setScale={this.setScale} />
+                <Header>
+                    <ScaleSelector scale={this.scale} setScale={this.setScale} />
+                    <GitHub />
+                </Header>
                 <Content>
                     <Fretboard scale={this.scale} />
                 </Content>
