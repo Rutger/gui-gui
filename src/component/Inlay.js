@@ -17,7 +17,8 @@ const Fret = styled.div`
     align-items: center;
     width: 42px;
     border-right: 2px solid;
-    border-image: linear-gradient(to ${props => props.position}, #eee, rgba(0, 0, 0, 0)) 1 100%;
+    border-left: 0;
+    border-image: linear-gradient(to ${props => props.position}, #eee, #fff) 1 100%;
 `;
 
 const Indicator = styled.div`
@@ -30,7 +31,7 @@ const Indicator = styled.div`
 
 const TunerSpacer = styled.div`
     width: 90px;
-    background: linear-gradient(to ${props => props.position}, #eee, rgba(0, 0, 0, 0));
+    background: linear-gradient(to ${props => props.position}, #eee, #fff);
     display: flex;
     align-items: center;
     justify-content: center;
