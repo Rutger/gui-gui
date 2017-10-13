@@ -22,11 +22,6 @@ const ScaleSelect = styled(Select)`
     margin: 5px;
 `;
 
-const Description = styled.div`
-    color: white;
-    margin: 5px;
-`;
-
 const tonics = [
     { value: 'A', label: 'A' },
     { value: 'A#', label: 'A# / Bb' },
@@ -82,9 +77,6 @@ export default class Fretboard extends Component {
     render() {
         return (
             <Container>
-                <Description>
-                    Display scale
-                </Description>
                 <TonicSelect
                     options={tonics}
                     value={this.tonic}
