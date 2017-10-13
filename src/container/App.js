@@ -31,6 +31,16 @@ const Content = styled.div`
     justify-content: center;
 `;
 
+const Info = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+`;
+
 const AuthorLink = styled.a`
     color: #fff;
     text-decoration: none;
@@ -57,8 +67,10 @@ export default class App extends Component {
             <Container>
                 <Header>
                     <ScaleSelector scale={this.scale} setScale={this.setScale} />
-                    <AuthorLink href="https://rutgerschimmel.nl">Rutger Schimmel</AuthorLink>
-                    <GitHub />
+                    <Info>
+                        <AuthorLink href="https://rutgerschimmel.nl">Rutger Schimmel</AuthorLink>
+                        <GitHub />
+                    </Info>
                 </Header>
                 <Content>
                     <Fretboard scale={this.scale} />

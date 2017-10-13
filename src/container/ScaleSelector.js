@@ -18,7 +18,8 @@ const TonicSelect = styled(Select)`
 `;
 
 const ScaleSelect = styled(Select)`
-    width: 300px;
+    flex: 1;
+    max-width: 300px;
     margin: 5px;
 `;
 
