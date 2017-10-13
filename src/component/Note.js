@@ -8,6 +8,7 @@ const Note = styled.div`
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

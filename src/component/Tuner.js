@@ -10,7 +10,7 @@ import Button from './Button';
 
 const Container = styled.div`
     background: #eee;
-    width: 80px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,12 +39,12 @@ export default class Tuner extends Component {
 
         return (
             <Container>
+                <Button type="button" onClick={this.props.onDelete}>
+                    ×
+                </Button>
                 <Actions>
                     <Button type="button" onClick={() => this.props.string.transpose(1)}>
                         ▲
-                    </Button>
-                    <Button type="button" onClick={this.props.onDelete}>
-                        ×
                     </Button>
                     <Button type="button" onClick={() => this.props.string.transpose(-1)}>
                         ▼

@@ -15,7 +15,6 @@ const Container = styled.div`
 `;
 
 const Fret = styled.div`
-    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +29,7 @@ export default class String extends Component {
         scale: MobXTypes.arrayOrObservableArray.isRequired,
     };
 
-    renderNote = (semitones) => {
+    renderFret = (semitones) => {
         const key = this.props.string.tuningKey + semitones + 8;
         const scaleNote = note.pc(note.fromMidi(key, true));
 
@@ -44,9 +43,9 @@ export default class String extends Component {
         );
     }
 
-    renderNotes = () => {
+    renderFrets = () => {
         const notes = Array.apply(null, Array(22)).map((value, index) => index + 1);
-        return notes.map((semitones) => this.renderNote(semitones));
+        return notes.map((semitones) => this.renderFret(semitones));
     }
 
     handleDelete = () => {
@@ -66,7 +65,7 @@ export default class String extends Component {
                     onDelete={this.handleDelete}
                     scale={this.props.scale}
                 />
-                {this.renderNotes()}
+            {this.renderFrets()}
             </Container>
         );
     }
