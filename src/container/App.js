@@ -31,6 +31,11 @@ const Content = styled.div`
     justify-content: center;
 `;
 
+const AuthorLink = styled.a`
+    color: #fff;
+    text-decoration: none;
+`;
+
 @observer
 export default class App extends Component {
     @observable scale = [];
@@ -52,6 +57,7 @@ export default class App extends Component {
             <Container>
                 <Header>
                     <ScaleSelector scale={this.scale} setScale={this.setScale} />
+                    <AuthorLink href="https://rutgerschimmel.nl">Rutger Schimmel</AuthorLink>
                     <GitHub />
                 </Header>
                 <Content>
