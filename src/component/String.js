@@ -50,7 +50,12 @@ export default class String extends Component {
     }
 
     handleDelete = () => {
-        this.props.stringStore.remove(this.props.string);
+        const key = this.props.string.tuningKey + 8;
+        const scaleNote = note.pc(note.fromMidi(key, true));
+
+        if (window.confirm(`Are you sure you want to remove the ${scaleNote} string?`)) {
+            this.props.stringStore.remove(this.props.string);
+        }
     }
 
     render() {
