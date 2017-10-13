@@ -27,6 +27,7 @@ export default class String extends Component {
         string: PropTypes.instanceOf(StringModel).isRequired,
         strings: PropTypes.array.isRequired,
         scale: MobXTypes.arrayOrObservableArray.isRequired,
+        onRemoveString: PropTypes.func.isRequired,
     };
 
     renderFret = (semitones) => {
@@ -53,7 +54,9 @@ export default class String extends Component {
         const scaleNote = note.pc(note.fromMidi(key, true));
 
         if (window.confirm(`Are you sure you want to remove the ${scaleNote} string?`)) {
-            this.props.strings.remove(this.props.string);
+
+            const stringIndex = this.props.strings.findIndex(string => string.cid === this.props.string.cid);
+            this.props.onRemoveString(stringIndex);
         }
     }
 

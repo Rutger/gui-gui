@@ -32,13 +32,13 @@ export default class Fretboard extends Component {
     componentWillMount() {
         const strings = [8, 3, 11, 6, 1, 8];
         strings.forEach(string => {
-            this.addString({
+            this.handleAddString({
                 tuningKey: string
             });
         });
     }
 
-    addString = ({tuningKey, position}) => {
+    handleAddString = ({tuningKey, position}) => {
         const string = new StringModel({
             tuningKey: tuningKey || 1,
         });
@@ -57,18 +57,30 @@ export default class Fretboard extends Component {
         this.setState({ strings });
     }
 
+    handleRemoveString = index => {
+        const strings = this.state.strings;
+        strings.splice(index, 1);
+        this.setState({ strings });
+    };
+
     render() {
         return (
             <Container>
                 <Board>
                     <Inlay position="top">
-                        <Button bold onClick={() => this.addString({ position: 'first' })} type="button">+</Button>
+                        <Button bold onClick={() => this.handleAddString({ position: 'first' })} type="button">+</Button>
                     </Inlay>
                     {this.state.strings.map(string =>
-                        <String key={string.cid} string={string} strings={this.state.strings} scale={this.props.scale} />
+                        <String
+                            key={string.cid}
+                            string={string}
+                            strings={this.state.strings}
+                            scale={this.props.scale}
+                            onRemoveString={this.handleRemoveString}
+                        />
                     )}
                     <Inlay position="bottom">
-                        <Button bold onClick={() => this.addString({ position: 'last' })} type="button">+</Button>
+                        <Button bold onClick={() => this.handleAddString({ position: 'last' })} type="button">+</Button>
                     </Inlay>
                 </Board>
             </Container>
