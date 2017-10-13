@@ -36,6 +36,8 @@ const TransposeButton = styled(Button)`
     border-bottom: 1px solid #eee;
     background: #fff;
     font-size: 12px;
+    width: 100%;
+    height: 100%;
 
     &:last-child {
         border-bottom: 0;
