@@ -1,6 +1,7 @@
 {
   "name": "gui-gui",
   "version": "0.1.0",
+  "homepage" : "https://gui-gui.rutgerschimmel.nl",
   "dependencies": {
     "axios": "^0.16.2",
     "mobx": "^3.3.0",
