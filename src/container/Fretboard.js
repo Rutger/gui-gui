@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import String from '../component/String';
 import Inlay from '../component/Inlay';
 import Button from '../component/Button';
-import { String as StringModel, StringStore } from '../store/String';
+import { String as StringModel } from '../store/String';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -22,31 +22,53 @@ export default class Fretboard extends Component {
         scale: MobXTypes.arrayOrObservableArray.isRequired,
     };
 
-    componentWillMount() {
-        this.stringStore = new StringStore();
-
-        const strings = [8, 3, 11, 6, 1, 8];
-        strings.forEach(this.addString);
+    constructor(props) {
+        super(props);
+        this.state = {
+            strings: [],
+        };
     }
 
-    addString = (tuningKey) => {
+    componentWillMount() {
+        const strings = [8, 3, 11, 6, 1, 8];
+        strings.forEach(string => {
+            this.addString({
+                tuningKey: string
+            });
+        });
+    }
+
+    addString = ({tuningKey, position}) => {
         const string = new StringModel({
             tuningKey: tuningKey || 1,
         });
+        const strings = this.state.strings;
 
-        this.stringStore.add(string.toJS());
+        switch (position) {
+            case 'first':
+                strings.unshift(string);
+                break;
+            case 'last':
+            default:
+                strings.push(string);
+                break;
+        }
+
+        this.setState({ strings });
     }
 
     render() {
         return (
             <Container>
                 <Board>
-                    <Inlay position="top" />
-                    {this.stringStore.map(string =>
-                        <String key={string.cid} string={string} stringStore={this.stringStore} scale={this.props.scale} />
+                    <Inlay position="top">
+                        <Button bold onClick={() => this.addString({ position: 'first' })} type="button">+</Button>
+                    </Inlay>
+                    {this.state.strings.map(string =>
+                        <String key={string.cid} string={string} strings={this.state.strings} scale={this.props.scale} />
                     )}
                     <Inlay position="bottom">
-                        <Button bold onClick={() => this.addString()} type="button">+</Button>
+                        <Button bold onClick={() => this.addString({ position: 'last' })} type="button">+</Button>
                     </Inlay>
                 </Board>
             </Container>
