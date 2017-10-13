@@ -10,19 +10,40 @@ import Button from './Button';
 
 const Container = styled.div`
     background: #eee;
-    width: 90px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 `;
 
-const Actions = styled.div`
+const TransposeContainer = styled.div`
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    width: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+`;
+
+const TransposeButton = styled(Button)`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 5px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    font-size: 12px;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    &:active {
+        background: #ddd;
+    }
 `;
 
 @observer
@@ -39,17 +60,17 @@ export default class Tuner extends Component {
 
         return (
             <Container>
-                <Button type="button" onClick={this.props.onDelete}>
+                <Button bold type="button" onClick={this.props.onDelete}>
                     ×
                 </Button>
-                <Actions>
-                    <Button type="button" onClick={() => this.props.string.transpose(1)}>
-                        ▲
-                    </Button>
-                    <Button type="button" onClick={() => this.props.string.transpose(-1)}>
-                        ▼
-                    </Button>
-                </Actions>
+                <TransposeContainer>
+                    <TransposeButton type="button" onClick={() => this.props.string.transpose(1)}>
+                        ♯
+                    </TransposeButton>
+                    <TransposeButton type="button" onClick={() => this.props.string.transpose(-1)}>
+                        ♭
+                    </TransposeButton>
+                </TransposeContainer>
                 <Note
                     note={scaleNote}
                     scale={this.props.scale}

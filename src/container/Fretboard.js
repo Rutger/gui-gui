@@ -46,7 +46,7 @@ export default class Fretboard extends Component {
                         <String key={string.cid} string={string} stringStore={this.stringStore} scale={this.props.scale} />
                     )}
                     <Inlay position="bottom">
-                        <Button onClick={() => this.addString()} type="button">+</Button>
+                        <Button bold onClick={() => this.addString()} type="button">+</Button>
                     </Inlay>
                 </Board>
             </Container>

@@ -30,7 +30,7 @@ const Indicator = styled.div`
 `;
 
 const TunerSpacer = styled.div`
-    width: 90px;
+    width: 100px;
     background: linear-gradient(to ${props => props.position}, #eee, #fff);
     display: flex;
     align-items: center;
