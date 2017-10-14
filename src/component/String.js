@@ -7,6 +7,7 @@ import { note } from 'tonal';
 import styled from 'styled-components';
 import Tuner from './Tuner';
 import Note from './Note';
+import indicatorFormat from 'helper/indicatorFormat';
 
 const Container = styled.div`
     display: flex;
@@ -19,6 +20,10 @@ const Fret = styled.div`
     align-items: center;
     justify-content: center;
     border-right: 2px solid #eee;
+
+    ${props => !props.hasInlay ? null : `
+        background: #f3f3f3;
+    `}
 `;
 
 @observer
@@ -30,12 +35,16 @@ export default class String extends Component {
         onRemoveString: PropTypes.func.isRequired,
     };
 
-    renderFret = (semitones) => {
+    renderFret = (semitones, index) => {
         const key = this.props.string.tuningKey + semitones + 8;
         const scaleNote = note.pc(note.fromMidi(key, true));
+        const hasInlay = !!indicatorFormat[index % 12];
 
         return (
-            <Fret key={semitones}>
+            <Fret
+                key={semitones}
+                hasInlay={hasInlay}
+            >
                 <Note
                     note={scaleNote}
                     scale={this.props.scale}
@@ -46,7 +55,7 @@ export default class String extends Component {
 
     renderFrets = () => {
         const notes = Array.apply(null, Array(22)).map((value, index) => index + 1);
-        return notes.map((semitones) => this.renderFret(semitones));
+        return notes.map((semitones, index) => this.renderFret(semitones, index));
     }
 
     handleDelete = () => {
@@ -68,7 +77,7 @@ export default class String extends Component {
                     onDelete={this.handleDelete}
                     scale={this.props.scale}
                 />
-            {this.renderFrets()}
+                {this.renderFrets()}
             </Container>
         );
     }

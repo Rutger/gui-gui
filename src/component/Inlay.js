@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import indicatorFormat from 'helper/indicatorFormat';
 
 const Container = styled.div`
     display: flex;
@@ -39,31 +40,6 @@ const TunerSpacer = styled.div`
     align-items: center;
     justify-content: center;
 `;
-
-const indicatorFormat = [
-    null,
-    null,
-    1,
-    null,
-    1,
-    null,
-    1,
-    null,
-    1,
-    null,
-    null,
-    2,
-    null,
-    null,
-    1,
-    null,
-    1,
-    null,
-    1,
-    null,
-    1,
-    null,
-];
 
 @observer
 export default class Inlay extends Component {
