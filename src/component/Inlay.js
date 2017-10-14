@@ -21,12 +21,15 @@ const Fret = styled.div`
     border-image: linear-gradient(to ${props => props.position}, #eee, #fff) 1 100%;
 `;
 
-const Indicator = styled.div`
+const Circle = styled.div`
     width: 10px;
     height: 10px;
     background: #333;
     border-radius: 50%;
     margin: 5px;
+`;
+
+const Number = styled.div`
 `;
 
 const TunerSpacer = styled.div`
@@ -76,12 +79,20 @@ export default class Inlay extends Component {
                     {this.props.children}
                 </TunerSpacer>
                 {indicatorFormat.map((amount, indicatorIndex) => {
-                    const indicators = [];
-                    for (let index = 0; index < amount; index++) {
-                        indicators.push(<Indicator key={index} />);
+                    let Indicator = null;
+
+                    if (amount) {
+                        if (this.props.position === 'top') {
+                            Indicator = <Number>{indicatorIndex + 1}</Number>;
+                        } else {
+                            Indicator = [];
+                            for (let index = 0; index < amount; index++) {
+                                Indicator.push(<Circle key={index} />);
+                            }
+                        }
                     }
 
-                    return <Fret position={this.props.position} key={indicatorIndex}>{indicators}</Fret>;
+                    return <Fret position={this.props.position} key={indicatorIndex}>{Indicator}</Fret>;
                 })}
             </Container>
         );
