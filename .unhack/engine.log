@@ -1,0 +1,1329 @@
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-1] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:2648
+
+[io-compute-1] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-1] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:2648/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+ERROR:src/component/GitHub.js: java.lang.Exception: Could not find term binding for hoistedStates|21f6
+
+ERROR:src/component/Note.js: java.lang.Exception: Could not find term binding for hoistedStates|5a54
+
+ERROR:src/container/App.js: java.lang.Exception: Could not find term binding for hoistedStates|4d2e
+
+ERROR:src/component/Inlay.js: java.lang.Exception: Could not find term binding for hoistedStates|ffffdce9
+
+ERROR:src/container/ScaleSelector.js: java.lang.Exception: Could not find term binding for hoistedStates|ffffa001
+
+ERROR:src/component/Tuner.js: java.lang.Exception: Could not find term binding for hoistedStates|ffffe85e
+
+ERROR:src/component/String.js: java.lang.Exception: Could not find term binding for hoistedStates|fffff028
+
+ERROR:src/container/Fretboard.js: java.lang.Exception: Could not find term binding for hoistedStates|ab8
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-5] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:5501
+
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:5501/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+org.http4s.ember.core.EmberException$EmptyStream: Cannot Parse Empty Stream
+	at org.http4s.ember.core.Parser$MessageP$.$anonfun$recurseFind$2(Parser.scala:50)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at unsafeRunSync @ unhack.labels.YeastBasedDefinitions.$init$(YeastBasedDefinitions.scala:25)
+	at *> @ org.http4s.client.middleware.Retry$.retryLoop$1(Retry.scala:101)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-11] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 1075 threw an exception on attempt #1. Giving up.
+org.http4s.ember.client.internal.ClientHelpers$$anonfun$request$7$$anon$1: Remote Disconnect: Received zero bytes after sending request
+	at org.http4s.ember.client.internal.ClientHelpers$$anonfun$request$7.applyOrElse(ClientHelpers.scala:174)
+	at org.http4s.ember.client.internal.ClientHelpers$$anonfun$request$7.applyOrElse(ClientHelpers.scala:173)
+	at scala.PartialFunction$AndThen.applyOrElse(PartialFunction.scala:288)
+	at cats.ApplicativeError.$anonfun$recoverWith$1(ApplicativeError.scala:151)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at unsafeRunSync @ unhack.labels.YeastBasedDefinitions.$init$(YeastBasedDefinitions.scala:25)
+	at *> @ org.http4s.client.middleware.Retry$.retryLoop$1(Retry.scala:101)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+Caused by: org.http4s.ember.core.EmberException$EmptyStream: Cannot Parse Empty Stream
+	at org.http4s.ember.core.Parser$MessageP$.$anonfun$recurseFind$2(Parser.scala:50)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at unsafeRunSync @ unhack.labels.YeastBasedDefinitions.$init$(YeastBasedDefinitions.scala:25)
+	at *> @ org.http4s.client.middleware.Retry$.retryLoop$1(Retry.scala:101)
+	... 7 more
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/component/GitHub.js
+
+[io-compute-17] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 3228 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/component/Note.js
+
+[io-compute-17] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 5568 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/App.js
+
+[io-compute-6] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 8733 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/ScaleSelector.js
+
+[io-compute-17] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 4777 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/component/Inlay.js
+
+[io-compute-8] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 5280 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/component/Tuner.js
+
+[io-compute-2] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 8218 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/component/String.js
+
+[io-compute-5] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 12026 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/Fretboard.js
+
+[io-compute-7] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 12026 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/Fretboard.js
+
+[io-compute-4] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 12026 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/Fretboard.js
+
+[io-compute-10] INFO org.http4s.client.middleware.Retry - Request method=POST uri=http://localhost:3030/rewrite/js headers=Content-Type: application/json,Content-Length: 12026 threw an exception on attempt #1. Giving up.
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+WARN: /Users/luisyoshida/Projects/grit/gui-gui/src/container/Fretboard.js
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-6] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 412 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-12] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1185 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-17] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:4280
+
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:4280/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-1] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 413 milliseconds
+java.net.ConnectException: Connection refused
+
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-6] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1576 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-5] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:1590
+
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:1590/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-8] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 823 milliseconds
+java.net.ConnectException: Connection refused
+
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-16] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 225 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-11] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #3. Retrying after 1332 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-5] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:4436
+
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-5] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:4436/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-17] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 834 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-10] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 619 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-8] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:5562
+
+[io-compute-8] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-8] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:5562/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-1] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 437 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-4] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 2400 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-16] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:5835
+
+[io-compute-16] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-16] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:5835/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-8] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 613 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-6] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1869 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-17] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:8298
+
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:8298/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-6] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 613 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-5] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 483 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-7] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #3. Retrying after 3384 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-15] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:3591
+
+[io-compute-15] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-15] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:3591/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-3] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 104 milliseconds
+java.net.ConnectException: Connection refused
+
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-8] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1323 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-16] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #3. Retrying after 6133 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-6] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:3204
+
+[io-compute-6] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-6] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:3204/
+
+Pattern ReactToHooks()
+
+ERROR:Expected "}":109:7, found "maybe let "
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-10] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 593 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-12] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1050 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-17] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:5384
+
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-17] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:5384/
+
+Pattern ReactToHooks()
+
+ERROR:Expected "}":109:56, found "contains `"
+
+WARN: Sentry has not been initialized. Add an engineSentryDestination to .unhack/config.json or set the ENGINE_SENTRY_DESTINATION env variable.
+
+[io-compute-3] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #1. Retrying after 889 milliseconds
+java.net.ConnectException: Connection refused
+
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-16] INFO org.http4s.client.middleware.Retry - Request threw an exception on attempt #2. Retrying after 1732 milliseconds
+java.net.ConnectException: Connection refused
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST_ConnectException_constructor_026ed3e065cc052585fca43de83265b2d1381f28(JNIJavaCallWrappers.java:0)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(UnixAsynchronousSocketChannelImpl.java)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:256)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:202)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:217)
+	at sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:312)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at async_ @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$client$5(SocketGroupPlatform.scala:60)
+	at blocking @ fs2.io.net.tls.TLSContextCompanionPlatform$BuilderCompanionPlatform$AsyncBuilder.system(TLSContextPlatform.scala:266)
+	at map @ com.comcast.ip4s.SocketAddressCompanionPlatform$ResolveOps.resolve(SocketAddressPlatform.scala:39)
+	at flatMap @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.connect$1(SocketGroupPlatform.scala:59)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at onError$extension @ org.typelevel.keypool.KeyPool$Builder.keepRunning$1(KeyPool.scala:337)
+	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.setup$1(SocketGroupPlatform.scala:51)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at make @ org.typelevel.keypool.KeyPool$Builder.build(KeyPool.scala:341)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+	at delay @ org.http4s.ember.client.internal.ClientHelpers$.getAddress(ClientHelpers.scala:221)
+	at run @ com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:704)
+
+[io-compute-1] INFO org.http4s.blaze.channel.nio1.NIO1SocketServerGroup - Service bound to address /[0:0:0:0:0:0:0:0]:5195
+
+[io-compute-1] INFO org.http4s.blaze.server.BlazeServerBuilder - 
+  _   _   _        _ _
+ | |_| |_| |_ _ __| | | ___
+ | ' \  _|  _| '_ \_  _(_-<
+ |_||_\__|\__| .__/ |_|/__/
+             |_|
+[io-compute-1] INFO org.http4s.blaze.server.BlazeServerBuilder - http4s v0.23.12 on blaze v0.23.12 started at http://[::]:5195/
+
+Pattern ReactToHooks()
+
+Start execution on 14 files... (16-parallelism)
+
+ERROR:src/container/ScaleSelector.js: java.lang.Exception: Could not find term binding for outsideSetter|ffff843b
+

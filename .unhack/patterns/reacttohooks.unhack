@@ -1,0 +1,149 @@
+pattern ChangeThis() = maybe contains bubble {
+  orelse {
+    `this.state.$name` => $name
+    `this.setState({ $stateUpdate })` => $stateUpdaters where {
+      $stateUpdate <: ...let $key, $val, $keyString, $setter, $capitalized in `$key: $val` where {
+        $key <: Identifier(_, _, _, _)
+        $capitalized = capitalize($key)
+        $setter = Identifier(s"set${capitalized}", _, _, _)
+        $stateUpdaters = [...$stateUpdaters, `$setter($val)`]
+      }
+    }
+    `this.$name` => $name
+  }
+}
+
+pattern ProcessState() = ...let $key, $val, $setter, $capitalized in `$key: $val` where {
+  $key <: Identifier(_, _, _, _)
+  $capitalized = capitalize($key)
+  $setterString = s"set${capitalized}"
+  $setter = Identifier($setterString, _, _, _)
+  $stateStatements = [...$stateStatements, `const [$key, $setter] = useState($val)`]
+}
+
+pattern ReactToHooks() = or {`class $name extends React.Component { $oldBody }`, `class $name extends Component { $oldBody }`} => $newStatements where {
+  if ($oldBody <: contains `static defaultProps = $_`) then {
+    $propsArg = `inputProps`
+  } else {
+    if ($oldBody <: contains `this.props`) then {
+      $propsArg = `props`
+    } else {
+      $propsArg = []
+    }
+  }
+
+  $oldBody <: ...orelse {
+    let $constructorBody in `constructor($props) { $constructorBody }` where {
+      $constructorBody <: ...orelse {
+        let state in `this.state = { $state }` where {
+          $state <: ProcessState()
+        }
+        CallExpression(false, Super(), [$props], null)
+        CallExpression(false, Super(), [], null)
+        `this.$_ = this.$_.bind(this)`
+        let $other in $other where {
+          $othersContructor = [ ...$others, $other ]
+          $othersOnConstructor = `useEffect(() => {$othersContructor}, [])`
+        }
+      }
+    }
+
+    let state in ClassProperty(`state`, _, ObjectExpression($state), _, _, _, _) where {
+      $state <: ProcessState()
+    }
+    let $updateEffectBody in ClassMethod(_, [], $updateEffectBody, _,_, _, [], _, _, _ ,_,  `componentDidUpdate`, _, _, false, _, _, _, _, _) where {
+      $updateEffectBody <: ChangeThis()
+      $updateEffect = `useEffect(() => $updateEffectBody)`
+    }
+    let $mountEffectBody in ClassMethod(_, [], $mountEffectBody, _,_, _, [], _, _, _ ,_,  or {`componentDidMount`, `componentWillMount`}, _, _, false, _, _, _, _, _) where {
+      if $oldBody <: contains or {`componentDidUpdate() { $mountEffectBody }`, `componentWillMount() { $mountEffectBody }`} then {
+        $mountEffect = []
+      } else {
+        $mountEffect = `useEffect(() => $mountEffectBody)`
+        $mountEffectBody <: ChangeThis()
+      }
+    }
+
+    let $unmountBody in ClassMethod(_, [], $unmountBody, _,_, _, [], _, _, _ ,_,  `componentWillUnmount`, _, _, false, _, _, _, _, _) where {
+      $unmountEffect = `useEffect(() => { return () => $unmountBody })`
+      $unmountBody <: ChangeThis()
+    }
+
+    `render() { $renderBody }` where $renderBody <: ChangeThis()
+    // statics
+    let $staticFuncName, $staticFuncBody, $args in or {
+      `static $staticFuncName = ($args) => { $staticFuncBody }`
+      `static $staticFuncName($args) { $staticFuncBody }`
+    } where {
+      $staticMethods = [ ... $staticMethods, `$name.$staticFuncName = ($args) => { $staticFuncBody }`]
+    }
+    let $defaultProps in `static defaultProps = { $defaultProps }` where {
+      $finalDefaultProps = [`const props = { $defaultProps, ...inputProps }`]
+    }
+    let $staticProp, $staticValue in `static $staticProp = $staticValue` where {
+      $staticProps = [ ... $staticProps, `$name.$staticProp = $staticValue` ]
+    }
+
+    let $funcName, $funcBody, $arg, $getter in ClassMethod(_, $args, $funcBody, _, _, _, [], _, _, _, _,  $funcName, _, _, false, _, _, _, _, _) as $getter where {
+      if ($getter <: contains `private get $_() {$_}`) then {
+        $memos = [...$memos, `const $funcName = useMemo(($args) => $funcBody, [])`]
+        $funcBody <: ChangeThis()
+        ensureImportFrom(`useMemo`, `"react"`)
+      } else {
+        $callbacks = [...$callbacks, `const $funcName = useCallback(($args) => $funcBody, [])`]
+        $funcBody <: ChangeThis()
+        ensureImportFrom(`useCallback`, `"react"`)
+      }
+    }
+    let $funcName, $entireFunc, $vars in ClassProperty($funcName, _, `($_) => { $_ }` as $entireFunc, _, _, _, _) where {
+      $callbacks = [...$callbacks, `const $funcName = $entireFunc`]
+      $entireFunc <: ChangeThis()
+    }
+
+    let $stateName, $initialState, $state in ClassProperty($stateName, _, or {`this.props.$_`, `props.$_`, StringLiteral(_, _)} as $initialState, _, _, _, _) as $state where {
+      $capitalizedStateName = capitalize($stateName)
+      $setter = Identifier(s"set${capitalizedStateName}", _, _, _)
+      $initialState <: ChangeThis()
+      $useStates = [...$useStates, `const [$stateName, $setter] = useState($initialState)`]
+    }
+
+    let $stateName, $initialState, $obs in `@observable $stateName = $initialState` as $obs where {
+      $capitalizedStateName = capitalize($stateName)
+      $setter = Identifier(s"set${capitalizedStateName}", _, _, _)
+      $initialState <: ChangeThis()
+      $useStates = [...$useStates, `const [$stateName, $setter] = useState($initialState)`]
+    }
+
+    let $stateName2, $obs2 in `@observable $stateName2` as $obs2 where {
+      $capitalizedStateName2 = capitalize($stateName2)
+      $setter2 = Identifier(s"set${capitalizedStateName2}", _, _, _)
+      $useStates = [...$useStates, `const [$stateName2, $setter2] = useState()`]
+    }
+
+    maybe let $params, $reactionBody in ClassProperty(_, _, `reaction($_, ($params) => {$reactionBody})`, _, _, _, _) where {
+      $reactions = [...$reactions, `useEffect(() => {$reactionBody}, [$params])`]
+      $reactionBody <: ChangeThis()
+    }
+
+    maybe let $name in ClassProperty($name, _, `new ViewState()`, _, _, _, _) where {
+      $viewstates = [...$viewstates, `const $name = useRef(new ViewState())`]
+      ensureImportFrom(`useRef`, `"react"`)
+    }
+
+    let $other in $other where $others = [ ...$others, $other ]
+  }
+  $oldBody <: maybe let $defaultProps in outside contains `$name.defaultProps = { $defaultProps }` => . where {
+    $finalDefaultProps = [`const props = { $defaultProps, ...inputProps }`]
+  }
+
+  newBody = [ ...$finalDefaultProps, ...$stateStatements, ...$constructorBody, ...$mountEffect, ...$updateEffect, ...$viewstates, ...$useStates, ...$memos, ...$callbacks, ...$reactions, ... $renderBody, ...$othersOnConstructor, ...$others ]
+
+  if ($oldBody <: contains `new ViewState()`) then {
+    newBody = `observer(() => {$newBody})`
+    ensureImportFrom(`observer`, "mobx-react")
+  }
+
+  newStatements = [ `const $name = ($propsArg) => {$newBody}`, ... $staticProps, ... $staticMethods ]
+}
+
+ReactToHooks()
