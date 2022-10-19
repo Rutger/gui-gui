@@ -26,59 +26,56 @@ const Fret = styled.div`
     `}
 `;
 
-@observer
-export default class String extends Component {
-    static propTypes = {
-        string: PropTypes.instanceOf(StringModel).isRequired,
-        strings: PropTypes.array.isRequired,
-        scale: MobXTypes.arrayOrObservableArray.isRequired,
-        onRemoveString: PropTypes.func.isRequired,
-    };
+const String = props => {
+  const renderFret = (semitones, index) => {
+      const key = props.string.tuningKey + semitones + 8;
+      const scaleNote = note.pc(note.fromMidi(key, true));
+      const hasInlay = !!indicatorFormat[index % 12];
 
-    renderFret = (semitones, index) => {
-        const key = this.props.string.tuningKey + semitones + 8;
-        const scaleNote = note.pc(note.fromMidi(key, true));
-        const hasInlay = !!indicatorFormat[index % 12];
+      return (
+        <Fret
+            key={semitones}
+            hasInlay={hasInlay}
+        >
+            <Note
+                note={scaleNote}
+                scale={props.scale}
+            />
+        </Fret>
+      );
+  };
 
-        return (
-            <Fret
-                key={semitones}
-                hasInlay={hasInlay}
-            >
-                <Note
-                    note={scaleNote}
-                    scale={this.props.scale}
-                />
-            </Fret>
-        );
-    }
+  const renderFrets = () => {
+      const notes = Array.apply(null, Array(22)).map((value, index) => index + 1);
+      return notes.map((semitones, index) => renderFret(semitones, index));
+  };
 
-    renderFrets = () => {
-        const notes = Array.apply(null, Array(22)).map((value, index) => index + 1);
-        return notes.map((semitones, index) => this.renderFret(semitones, index));
-    }
+  const handleDelete = () => {
+      const key = props.string.tuningKey + 8;
+      const scaleNote = note.pc(note.fromMidi(key, true));
 
-    handleDelete = () => {
-        const key = this.props.string.tuningKey + 8;
-        const scaleNote = note.pc(note.fromMidi(key, true));
+      if (window.confirm(`Are you sure you want to remove the ${scaleNote} string?`)) {
 
-        if (window.confirm(`Are you sure you want to remove the ${scaleNote} string?`)) {
+          const stringIndex = props.strings.findIndex(string => string.cid === props.string.cid);
+          props.onRemoveString(stringIndex);
+      }
+  };
 
-            const stringIndex = this.props.strings.findIndex(string => string.cid === this.props.string.cid);
-            this.props.onRemoveString(stringIndex);
-        }
-    }
+  return (
+    <Container>
+        <Tuner
+            string={props.string}
+            onDelete={handleDelete}
+            scale={props.scale}
+        />
+        {renderFrets()}
+    </Container>
+  );
+};
 
-    render() {
-        return (
-            <Container>
-                <Tuner
-                    string={this.props.string}
-                    onDelete={this.handleDelete}
-                    scale={this.props.scale}
-                />
-                {this.renderFrets()}
-            </Container>
-        );
-    }
-}
+String.propTypes = {
+    string: PropTypes.instanceOf(StringModel).isRequired,
+    strings: PropTypes.array.isRequired,
+    scale: MobXTypes.arrayOrObservableArray.isRequired,
+    onRemoveString: PropTypes.func.isRequired,
+};

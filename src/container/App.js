@@ -46,36 +46,33 @@ const AuthorLink = styled.a`
     text-decoration: none;
 `;
 
-@observer
-export default class App extends Component {
-    @observable scale = [];
+const App = () => {
+  useEffect(() => {
+      setScale('A', 'major');
+  });
 
-    setScale = (tonic, name) => {
-        this.scale = scale.notes(tonic, name)
-            // Simplify scale.
-            .map(scaleNote => note.pc(
-                note.fromMidi(note.midi(`${scaleNote}4`), true)
-            ));
-    }
+  const [scale, setScale] = useState([]);
 
-    componentWillMount() {
-        this.setScale('A', 'major');
-    }
+  const setScale = (tonic, name) => {
+      scale = scale.notes(tonic, name)
+          // Simplify scale.
+          .map(scaleNote => note.pc(
+              note.fromMidi(note.midi(`${scaleNote}4`), true)
+          ));
+  };
 
-    render() {
-        return (
-            <Container>
-                <Header>
-                    <ScaleSelector scale={this.scale} setScale={this.setScale} />
-                    <Info>
-                        <AuthorLink href="https://rutgerschimmel.nl">Rutger Schimmel</AuthorLink>
-                        <GitHub />
-                    </Info>
-                </Header>
-                <Content>
-                    <Fretboard scale={this.scale} />
-                </Content>
-            </Container>
-        );
-    }
-}
+  return (
+    <Container>
+        <Header>
+            <ScaleSelector scale={scale} setScale={setScale} />
+            <Info>
+                <AuthorLink href="https://rutgerschimmel.nl">Rutger Schimmel</AuthorLink>
+                <GitHub />
+            </Info>
+        </Header>
+        <Content>
+            <Fretboard scale={scale} />
+        </Content>
+    </Container>
+  );
+};

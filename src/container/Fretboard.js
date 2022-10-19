@@ -16,74 +16,66 @@ const Board = styled.div`
     display: inline-block;
 `;
 
-@observer
-export default class Fretboard extends Component {
-    static propTypes = {
-        scale: MobXTypes.arrayOrObservableArray.isRequired,
-    };
+const Fretboard = props => {
+  const [strings, setStrings] = useState([]);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            strings: [],
-        };
-    }
+  useEffect(() => {
+      const strings = [8, 3, 11, 6, 1, 8];
+      strings.forEach(string => {
+          handleAddString({
+              tuningKey: string
+          });
+      });
+  });
 
-    componentWillMount() {
-        const strings = [8, 3, 11, 6, 1, 8];
-        strings.forEach(string => {
-            this.handleAddString({
-                tuningKey: string
-            });
-        });
-    }
+  const handleAddString = ({tuningKey, position}) => {
+      const string = new StringModel({
+          tuningKey: tuningKey || 1,
+      });
+      const strings = strings;
 
-    handleAddString = ({tuningKey, position}) => {
-        const string = new StringModel({
-            tuningKey: tuningKey || 1,
-        });
-        const strings = this.state.strings;
+      switch (position) {
+          case 'first':
+              strings.unshift(string);
+              break;
+          case 'last':
+          default:
+              strings.push(string);
+              break;
+      }
 
-        switch (position) {
-            case 'first':
-                strings.unshift(string);
-                break;
-            case 'last':
-            default:
-                strings.push(string);
-                break;
-        }
+      setStrings(strings);
+  };
 
-        this.setState({ strings });
-    }
+  const handleRemoveString = index => {
+      const strings = strings;
+      strings.splice(index, 1);
+      setStrings(strings);
+  };
 
-    handleRemoveString = index => {
-        const strings = this.state.strings;
-        strings.splice(index, 1);
-        this.setState({ strings });
-    };
+  return (
+    <Container>
+        <Board>
+            <Inlay position="top">
+                <Button bold onClick={() => handleAddString({ position: 'first' })} type="button">+</Button>
+            </Inlay>
+            {strings.map(string =>
+                <String
+                    key={string.cid}
+                    string={string}
+                    strings={strings}
+                    scale={props.scale}
+                    onRemoveString={handleRemoveString}
+                />
+            )}
+            <Inlay position="bottom">
+                <Button bold onClick={() => handleAddString({ position: 'last' })} type="button">+</Button>
+            </Inlay>
+        </Board>
+    </Container>
+  );
+};
 
-    render() {
-        return (
-            <Container>
-                <Board>
-                    <Inlay position="top">
-                        <Button bold onClick={() => this.handleAddString({ position: 'first' })} type="button">+</Button>
-                    </Inlay>
-                    {this.state.strings.map(string =>
-                        <String
-                            key={string.cid}
-                            string={string}
-                            strings={this.state.strings}
-                            scale={this.props.scale}
-                            onRemoveString={this.handleRemoveString}
-                        />
-                    )}
-                    <Inlay position="bottom">
-                        <Button bold onClick={() => this.handleAddString({ position: 'last' })} type="button">+</Button>
-                    </Inlay>
-                </Board>
-            </Container>
-        );
-    }
-}
+Fretboard.propTypes = {
+    scale: MobXTypes.arrayOrObservableArray.isRequired,
+};

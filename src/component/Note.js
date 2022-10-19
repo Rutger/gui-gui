@@ -29,25 +29,22 @@ const Note = styled.div`
     }}
 `;
 
-@observer
-export default class String extends Component {
-    static propTypes = {
-        note: PropTypes.string.isRequired,
-        scale: MobXTypes.arrayOrObservableArray.isRequired,
-    };
+const String = props => {
+  let scaleDegree = -1;
+  props.scale.forEach((scaleNote, index) => {
+      if (scaleNote === props.note) {
+          scaleDegree = index;
+      }
+  });
 
-    render() {
-        let scaleDegree = -1;
-        this.props.scale.forEach((scaleNote, index) => {
-            if (scaleNote === this.props.note) {
-                scaleDegree = index;
-            }
-        });
+  return (
+    <Note scaleDegree={scaleDegree}>
+        {props.note}
+    </Note>
+  );
+};
 
-        return (
-            <Note scaleDegree={scaleDegree}>
-                {this.props.note}
-            </Note>
-        );
-    }
-}
+String.propTypes = {
+    note: PropTypes.string.isRequired,
+    scale: MobXTypes.arrayOrObservableArray.isRequired,
+};

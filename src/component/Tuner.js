@@ -48,36 +48,33 @@ const TransposeButton = styled(Button)`
     }
 `;
 
-@observer
-export default class Tuner extends Component {
-    static propTypes = {
-        string: PropTypes.instanceOf(StringModel).isRequired,
-        onDelete: PropTypes.func.isRequired,
-        scale: MobXTypes.arrayOrObservableArray.isRequired,
-    };
+const Tuner = props => {
+  const key = props.string.tuningKey + 8;
+  const scaleNote = note.pc(note.fromMidi(key, true));
 
-    render() {
-        const key = this.props.string.tuningKey + 8;
-        const scaleNote = note.pc(note.fromMidi(key, true));
+  return (
+    <Container>
+        <Button bold type="button" onClick={props.onDelete}>
+            ×
+        </Button>
+        <TransposeContainer>
+            <TransposeButton type="button" onClick={() => props.string.transpose(1)}>
+                ♯
+            </TransposeButton>
+            <TransposeButton type="button" onClick={() => props.string.transpose(-1)}>
+                ♭
+            </TransposeButton>
+        </TransposeContainer>
+        <Note
+            note={scaleNote}
+            scale={props.scale}
+        />
+    </Container>
+  );
+};
 
-        return (
-            <Container>
-                <Button bold type="button" onClick={this.props.onDelete}>
-                    ×
-                </Button>
-                <TransposeContainer>
-                    <TransposeButton type="button" onClick={() => this.props.string.transpose(1)}>
-                        ♯
-                    </TransposeButton>
-                    <TransposeButton type="button" onClick={() => this.props.string.transpose(-1)}>
-                        ♭
-                    </TransposeButton>
-                </TransposeContainer>
-                <Note
-                    note={scaleNote}
-                    scale={this.props.scale}
-                />
-            </Container>
-        );
-    }
-}
+Tuner.propTypes = {
+    string: PropTypes.instanceOf(StringModel).isRequired,
+    onDelete: PropTypes.func.isRequired,
+    scale: MobXTypes.arrayOrObservableArray.isRequired,
+};

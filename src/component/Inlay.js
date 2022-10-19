@@ -41,36 +41,33 @@ const TunerSpacer = styled.div`
     justify-content: center;
 `;
 
-@observer
-export default class Inlay extends Component {
-    static propTypes = {
-        children: PropTypes.node,
-        position: PropTypes.string,
-    };
+const Inlay = props => {
+  return (
+    <Container>
+        <TunerSpacer position={props.position}>
+            {props.children}
+        </TunerSpacer>
+        {indicatorFormat.map((amount, indicatorIndex) => {
+            let Indicator = null;
 
-    render() {
-        return (
-            <Container>
-                <TunerSpacer position={this.props.position}>
-                    {this.props.children}
-                </TunerSpacer>
-                {indicatorFormat.map((amount, indicatorIndex) => {
-                    let Indicator = null;
-
-                    if (amount) {
-                        if (this.props.position === 'top') {
-                            Indicator = <Number>{indicatorIndex + 1}</Number>;
-                        } else {
-                            Indicator = [];
-                            for (let index = 0; index < amount; index++) {
-                                Indicator.push(<Circle key={index} />);
-                            }
-                        }
+            if (amount) {
+                if (props.position === 'top') {
+                    Indicator = <Number>{indicatorIndex + 1}</Number>;
+                } else {
+                    Indicator = [];
+                    for (let index = 0; index < amount; index++) {
+                        Indicator.push(<Circle key={index} />);
                     }
+                }
+            }
 
-                    return <Fret position={this.props.position} key={indicatorIndex}>{Indicator}</Fret>;
-                })}
-            </Container>
-        );
-    }
-}
+            return <Fret position={props.position} key={indicatorIndex}>{Indicator}</Fret>;
+        })}
+    </Container>
+  );
+};
+
+Inlay.propTypes = {
+    children: PropTypes.node,
+    position: PropTypes.string,
+};
